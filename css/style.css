@@ -1,0 +1,85 @@
+body {
+      font-family: 'Inter', sans-serif;
+  }
+  
+  /* Input and textarea styling without Tailwind @apply */
+  .form-input {
+      width: 100%;
+      padding: 14px 16px;
+      background-color: #1f2937; /* gray-800 */
+      border: 1px solid #374151; /* gray-700 */
+      border-radius: 0.5rem; /* rounded-md */
+      color: #f9fafb; /* gray-50 */
+      font-size: 16px;
+      line-height: 1.5;
+      outline: none;
+      transition: box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .form-input::placeholder {
+      color: #9ca3af; /* gray-400 */
+      opacity: 1;
+  }
+
+  .form-input:focus {
+      background-color: #374151; /* gray-700 */
+      border-color: #6366f1; /* indigo-500 */
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35);
+  }
+
+  textarea.form-input {
+      min-height: 120px; /* make textareas comfortably tall */
+      resize: vertical;
+  }
+
+  /* Button styling */
+  .btn {
+      width: 100%;
+      padding: 10px 16px;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #4f46e5; /* indigo-600 */
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn:hover {
+      background-color: #4338ca; /* indigo-700 */
+  }
+
+  .btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35), 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  /* Card styling */
+  .card {
+      background-color: #1f2937; /* gray-800 */
+      color: #e5e7eb; /* gray-200 */
+      border-radius: 0.75rem; /* rounded-xl */
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  /* Utility tweaks */
+  .muted {
+      color: #9ca3af; /* gray-400 */
+  }
+
+  .insight-item {
+      background-color: rgba(55, 65, 81, 0.5); /* gray-700/50 */
+      border: 1px solid #374151; /* gray-700 */
+      border-radius: 0.5rem;
+      padding: 1rem;
+  }
+
+  .insight-item + .insight-item {
+      margin-top: 0.75rem;
+  }
+
+  .insight-meta {
+      color: #9ca3af;
+      font-size: 0.875rem;
+  }
