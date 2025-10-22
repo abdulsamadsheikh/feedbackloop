@@ -3,9 +3,9 @@ const App = (function() {
     const state = {
         currentUser: null,
         userScores: {
-            'Ola Nordmann': 5,
-            'Kari Svendsen': 8,
-            'Arne Jacobsen': 2,
+            'Abdulsamad Sheikh': 5,
+            'Yassin Ouanda': 8,
+            'Monica A. Breiby': 2,
         },
         insights: [] // { role, wish, goal, author, timestamp }
     };
